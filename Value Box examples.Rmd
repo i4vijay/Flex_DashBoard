@@ -1,0 +1,46 @@
+---
+title: "Value Box Example"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Average Milage of Cars
+
+```{r}
+avg.milage = round(mean(mtcars$mpg),2)
+
+valueBox(avg.milage, icon = "fa-car", color = ifelse(avg.milage > 10, "warning","primary"))
+```
+
+### Average Wt of cars
+
+```{r}
+avg.wt = round(mean(mtcars$wt),2)
+
+valueBox(avg.wt, icon = "fa-car", color = ifelse(avg.milage > 10, "warning","primary"))
+```
+
+Row
+----------------------------------------------------------------------
+### Chart C
+
+```{r}
+
+```
+
+Row
+---------------------------------------------------------------------
+### Chart D
+```{r}
+
+```
+

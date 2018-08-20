@@ -1,0 +1,43 @@
+---
+title: "Gauges Example"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column
+-----------------------------------------------------------------------
+
+### Average Milage
+
+```{r}
+avg.milage = 27.1
+gauge(avg.milage, min = 0, max = 30, gaugeSectors(
+  success = c(15, 25), warning = c(26, 30), danger = c(0, 14)))
+```
+
+Column
+-----------------------------------------------------------------------
+
+### Average displacement
+
+```{r}
+avg.displacement = round(mean(mtcars$disp),2)
+gauge(avg.displacement, min = 0, max = 250)
+```
+
+Column
+-----------------------------------------------------------------------
+
+### Average Weight
+
+```{r}
+avg.weight = round(mean(mtcars$wt), 2)
+gauge(avg.weight, min = 0, max = 10)
+```
+

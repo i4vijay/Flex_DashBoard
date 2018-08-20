@@ -1,0 +1,51 @@
+---
+title: "Multiple Pages with page Navigation"
+output: flexdashboard::flex_dashboard
+---
+
+Page 1 - Sales {data-navmenu="Annual Report"}
+===================================== 
+
+Column
+----------------------------------------------------------------
+### Chart 1
+    
+```{r}
+```
+
+Column
+----------------------------------------------------------------
+### Chart 2
+
+```{r}
+```
+
+### Chart 3
+```{r}
+
+```
+
+Page 2 - Revenue {data-navmenu="Annual Report" data-orientation=rows}
+=====================================     
+
+Row 
+-------------------------
+
+### Chart 1
+    
+```{r}
+```
+
+Row
+---------------------------
+### Chart 2
+
+```{r}
+```
+
+### Chart 3
+
+```{r}
+
+```
+

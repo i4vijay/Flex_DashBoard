@@ -1,0 +1,35 @@
+---
+title: "Multiple Pages"
+output: flexdashboard::flex_dashboard
+---
+
+Page 1 - Sales
+===================================== 
+
+### Chart 1
+    
+```{r}
+```
+   
+### Chart 2
+
+```{r}
+```
+
+### Chart 3
+```{r}
+
+```
+
+Page 2 - Revenue 
+=====================================     
+
+### Chart 1
+    
+```{r}
+```
+    
+### Chart 2
+
+```{r}
+```

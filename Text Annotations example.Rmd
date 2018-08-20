@@ -1,0 +1,41 @@
+---
+title: "Text Annotations"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+This is the demo of Text Annotations
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Cars
+
+```{r}
+plot(cars)
+```
+
+> The notes are any text prefaced with after the code chunk which yields the component's output.
+> This note is \for test 
+> Please leave comments
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B {.no-title}
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+

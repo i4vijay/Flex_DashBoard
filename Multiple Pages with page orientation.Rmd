@@ -1,0 +1,42 @@
+---
+title: "Multiple Pages with page orientation"
+output: 
+ flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+Page 1 - Sales
+===================================== 
+
+Column
+----------------------------------------------------------------
+### Chart 1
+    
+```{r}
+```
+
+Column
+----------------------------------------------------------------
+### Chart 2
+
+```{r}
+```
+
+### Chart 3
+```{r}
+
+```
+
+Revenue 
+=====================================     
+
+### Chart 1
+    
+```{r}
+```
+    
+### Chart 2
+
+```{r}
+```

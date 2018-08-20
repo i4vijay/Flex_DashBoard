@@ -1,0 +1,36 @@
+---
+title: "Sizing (Orientation Column Layout-vertical layout fill)"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column {data-width=35, data-height= 35}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r, fig.width=3, fig.height=5}
+plot(cars)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+

@@ -1,0 +1,36 @@
+---
+title: "Scrolling Layout (Orientation Row wise)"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: scroll
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column 
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+Column 
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
